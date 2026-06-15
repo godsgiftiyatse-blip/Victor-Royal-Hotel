@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Your Stay | Victor Royal Hotel & Suites</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+<div class="logo">
+Victor Royal <span>Hotel</span>
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="booking.html">Book Now</a></li>
+</ul>
+
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" style="
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('images/booking-hero.jpg');
+background-size:cover;
+background-position:center;
+min-height:70vh;
+">
+
+<div class="hero-content">
+
+<h1>Reserve Your Stay</h1>
+
+<p>
+Luxury accommodation tailored to your comfort.
+</p>
+
+</div>
+
+</section>
+
+<!-- BOOKING FORM -->
+
+<section>
+
+<h2>Hotel Reservation</h2>
+
+<p style="
+max-width:800px;
+margin:auto;
+text-align:center;
+margin-bottom:40px;
+">
+Complete the reservation form below and our team will
+contact you to confirm your booking.
+</p>
+
+<div style="
+max-width:1100px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+">
+
+<form class="booking-form">
+
+<input type="text"
+placeholder="Full Name"
+required>
+
+<input type="email"
+placeholder="Email Address"
+required>
+
+<input type="tel"
+placeholder="Phone Number"
+required>
+
+<select required>
+<option>Select Room Type</option>
+<option>Standard Room</option>
+<option>Deluxe Room</option>
+<option>Executive Suite</option>
+</select>
+
+<input type="date" required>
+
+<input type="date" required>
+
+<select required>
+<option>Number of Guests</option>
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+</select>
+
+<select required>
+<option>Payment Method</option>
+<option>Pay on Arrival</option>
+<option>Bank Transfer</option>
+<option>Card Payment</option>
+</select>
+
+<textarea
+placeholder="Special Requests"
+style="
+grid-column:1/-1;
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+min-height:150px;
+resize:vertical;
+font-family:Poppins,sans-serif;
+"></textarea>
+
+<button type="submit">
+Reserve Now
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ROOM OPTIONS -->
+
+<section>
+
+<h2>Available Room Categories</h2>
+
+<div class="room-grid">
+
+<div class="room-card">
+
+<img src="images/room1.jpg" alt="Standard Room">
+
+<div class="room-content">
+
+<h3>Standard Room</h3>
+
+<p>
+Comfortable accommodation with modern amenities.
+</p>
+
+<h3>₦45,000 / Night</h3>
+
+</div>
+
+</div>
+
+<div class="room-card">
+
+<img src="images/room2.jpg" alt="Deluxe Room">
+
+<div class="room-content">
+
+<h3>Deluxe Room</h3>
+
+<p>
+Spacious luxury room with premium services.
+</p>
+
+<h3>₦75,000 / Night</h3>
+
+</div>
+
+</div>
+
+<div class="room-card">
+
+<img src="images/room3.jpg" alt="Executive Suite">
+
+<div class="room-content">
+
+<h3>Executive Suite</h3>
+
+<p>
+Ultimate comfort and exclusive hospitality experience.
+</p>
+
+<h3>₦150,000 / Night</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY BOOK WITH US -->
+
+<section>
+
+<h2>Why Book With Victor Royal Hotel?</h2>
+
+<div class="service-grid">
+
+<div class="service">
+<i class="fas fa-shield-heart"></i>
+<h3>Safe & Secure</h3>
+</div>
+
+<div class="service">
+<i class="fas fa-headset"></i>
+<h3>24/7 Support</h3>
+</div>
+
+<div class="service">
+<i class="fas fa-wifi"></i>
+<h3>Free WiFi</h3>
+</div>
+
+<div class="service">
+<i class="fas fa-mug-hot"></i>
+<h3>Complimentary Breakfast</h3>
+</div>
+
+<div class="service">
+<i class="fas fa-car"></i>
+<h3>Free Parking</h3>
+</div>
+
+<div class="service">
+<i class="fas fa-star"></i>
+<h3>Luxury Experience</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT CTA -->
+
+<section style="text-align:center;">
+
+<h2>Need Help With Your Reservation?</h2>
+
+<p style="margin-bottom:30px;">
+Our reservation team is available to assist you.
+</p>
+
+<a href="contact.html" class="btn">
+Contact Reservation Team
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Victor Royal Hotel & Suites.
+All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
