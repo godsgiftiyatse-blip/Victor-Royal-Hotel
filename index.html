@@ -1,136 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Victor Royal Hotel & Suites</title>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Victor Royal Hotel & Suites | Luxury Comfort Redefined</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="logo">Victor Royal <span>Hotel</span></div>
+<!-- HEADER -->
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#rooms">Rooms</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<header>
 
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="container nav-container">
+
+        <div class="logo">
+            Victor Royal Hotel & Suites
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="rooms.html">Rooms</a></li>
+
+                <li><a href="restaurant.html">Restaurant</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+
 </header>
 
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Luxury & Comfort Redefined</h1>
-    <p>Experience world-class hospitality at Victor Royal Hotel & Suites</p>
-    <a href="#booking" class="btn">Book Now</a>
-  </div>
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Luxury Comfort Redefined</h1>
+
+        <p>
+            Experience world-class hospitality,
+            elegant accommodation, and exceptional
+            service at Victor Royal Hotel & Suites.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="rooms.html" class="btn">
+                View Rooms
+            </a>
+
+            <a href="contact.html" class="btn btn-outline">
+                Book Now
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- BOOKING -->
-<section class="booking" id="booking">
-  <h2>Book Your Stay</h2>
+<!-- WELCOME -->
 
-  <form class="booking-form">
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <input type="date" required>
-    <input type="date" required>
-    <select>
-      <option>Room Type</option>
-      <option>Standard</option>
-      <option>Deluxe</option>
-      <option>Executive Suite</option>
-    </select>
-    <button type="submit">Check Availability</button>
-  </form>
+<section class="welcome">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Welcome To Victor Royal</h2>
+
+            <p>
+                A premium destination designed for
+                business travelers, tourists, families,
+                and guests seeking comfort and elegance.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
-  <h2>About Us</h2>
-  <p>
-    Victor Royal Hotel & Suites offers luxury accommodation, premium services, and unforgettable experiences for guests who value comfort and elegance.
-  </p>
+<!-- STATISTICS -->
 
-  <div class="stats">
-    <div>
-      <h3 id="stat1">0</h3>
-      <p>Rooms</p>
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat-card">
+
+            <h3 id="rooms-count">120</h3>
+
+            <p>Luxury Rooms</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3 id="guest-count">5000</h3>
+
+            <p>Happy Guests</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3 id="staff-count">75</h3>
+
+            <p>Professional Staff</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3 id="experience-count">10</h3>
+
+            <p>Years Experience</p>
+
+        </div>
+
     </div>
-    <div>
-      <h3 id="stat2">0</h3>
-      <p>Staff</p>
-    </div>
-    <div>
-      <h3 id="stat3">0</h3>
-      <p>Happy Guests</p>
-    </div>
-  </div>
+
 </section>
 
 <!-- ROOMS -->
-<section class="rooms" id="rooms">
-  <h2>Our Rooms</h2>
 
-  <div class="room-grid">
-    <div class="room-card">
-      <h3>Standard Room</h3>
-      <p>Comfortable and affordable stay.</p>
+<section class="rooms-preview">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Luxury Rooms & Suites</h2>
+
+            <p>
+                Designed to provide maximum comfort
+                and relaxation.
+            </p>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80">
+
+                <h3>Standard Room</h3>
+
+                <p>Comfortable and affordable accommodation.</p>
+
+                <span>₦35,000 / Night</span>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80">
+
+                <h3>Executive Room</h3>
+
+                <p>Premium comfort for business travelers.</p>
+
+                <span>₦55,000 / Night</span>
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80">
+
+                <h3>Royal Suite</h3>
+
+                <p>Luxury accommodation with VIP experience.</p>
+
+                <span>₦95,000 / Night</span>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="room-card">
-      <h3>Deluxe Room</h3>
-      <p>More space with premium comfort.</p>
-    </div>
-
-    <div class="room-card">
-      <h3>Executive Suite</h3>
-      <p>Luxury experience with full amenities.</p>
-    </div>
-  </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <h2>Our Services</h2>
+<!-- FACILITIES -->
 
-  <div class="service-grid">
-    <div class="service">24/7 Room Service</div>
-    <div class="service">Free WiFi</div>
-    <div class="service">Swimming Pool</div>
-    <div class="service">Restaurant & Bar</div>
-  </div>
+<section class="facilities">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Hotel Facilities</h2>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="facility-card">
+                <i class="fas fa-wifi"></i>
+                <h3>Free WiFi</h3>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>Swimming Pool</h3>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Fitness Center</h3>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Restaurant</h3>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-car"></i>
+                <h3>Parking Space</h3>
+            </div>
+
+            <div class="facility-card">
+                <i class="fas fa-users"></i>
+                <h3>Conference Hall</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESTAURANT -->
+
+<section class="restaurant">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Restaurant & Lounge</h2>
+
+            <p>
+                Enjoy delicious local and international
+                cuisines prepared by professional chefs.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials">
-  <h2>What Guests Say</h2>
 
-  <div class="testimonial-box">
-    <p>"Amazing experience! The rooms are clean and very comfortable."</p>
-    <h4>- Guest Review</h4>
-  </div>
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Guest Reviews</h2>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="testimonial-card">
+
+                <p>
+                    "Exceptional service and beautiful rooms.
+                    I highly recommend Victor Royal Hotel."
+                </p>
+
+                <h4>- John E.</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    "The staff were professional and the
+                    facilities exceeded expectations."
+                </p>
+
+                <h4>- Sarah A.</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    "One of the best hotel experiences
+                    I've had in Nigeria."
+                </p>
+
+                <h4>- Michael O.</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@victorroyalhotel.com</p>
-  <p>Phone: +234 XXX XXX XXXX</p>
+<!-- CTA -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Book Your Stay Today</h2>
+
+        <p>
+            Experience luxury, comfort, and exceptional hospitality.
+        </p>
+
+        <a href="https://wa.me/2348000000000" class="btn">
+            Book Via WhatsApp
+        </a>
+
+    </div>
+
 </section>
 
 <!-- FOOTER -->
+
 <footer>
-  <p>© 2026 Victor Royal Hotel & Suites. All Rights Reserved.</p>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>Victor Royal Hotel</h3>
+
+                <p>
+                    Luxury accommodation and premium hospitality.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>Home</li>
+                    <li>Rooms</li>
+                    <li>Gallery</li>
+                    <li>Contact</li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>+234 800 000 0000</p>
+                <p>info@victorroyalhotel.com</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Victor Royal Hotel & Suites.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
 </footer>
 
-<script src="script.js"></script>
+<a href="https://wa.me/2348000000000"
+class="whatsapp-float">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script src="js/script.js"></script>
+
 </body>
   </html>
