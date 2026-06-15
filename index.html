@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Victor Royal Hotel & Suites</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Victor Royal <span>Hotel</span></div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Luxury & Comfort Redefined</h1>
+    <p>Experience world-class hospitality at Victor Royal Hotel & Suites</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <h2>Book Your Stay</h2>
+
+  <form class="booking-form">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="date" required>
+    <input type="date" required>
+    <select>
+      <option>Room Type</option>
+      <option>Standard</option>
+      <option>Deluxe</option>
+      <option>Executive Suite</option>
+    </select>
+    <button type="submit">Check Availability</button>
+  </form>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    Victor Royal Hotel & Suites offers luxury accommodation, premium services, and unforgettable experiences for guests who value comfort and elegance.
+  </p>
+
+  <div class="stats">
+    <div>
+      <h3 id="stat1">0</h3>
+      <p>Rooms</p>
+    </div>
+    <div>
+      <h3 id="stat2">0</h3>
+      <p>Staff</p>
+    </div>
+    <div>
+      <h3 id="stat3">0</h3>
+      <p>Happy Guests</p>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="rooms" id="rooms">
+  <h2>Our Rooms</h2>
+
+  <div class="room-grid">
+    <div class="room-card">
+      <h3>Standard Room</h3>
+      <p>Comfortable and affordable stay.</p>
+    </div>
+
+    <div class="room-card">
+      <h3>Deluxe Room</h3>
+      <p>More space with premium comfort.</p>
+    </div>
+
+    <div class="room-card">
+      <h3>Executive Suite</h3>
+      <p>Luxury experience with full amenities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+    <div class="service">24/7 Room Service</div>
+    <div class="service">Free WiFi</div>
+    <div class="service">Swimming Pool</div>
+    <div class="service">Restaurant & Bar</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Guests Say</h2>
+
+  <div class="testimonial-box">
+    <p>"Amazing experience! The rooms are clean and very comfortable."</p>
+    <h4>- Guest Review</h4>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@victorroyalhotel.com</p>
+  <p>Phone: +234 XXX XXX XXXX</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Victor Royal Hotel & Suites. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
