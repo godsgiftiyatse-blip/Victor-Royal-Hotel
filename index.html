@@ -24,17 +24,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <header class="navbar">
 
 <div class="logo">
-Victor Royal
-<span>Hotel</span>
+Victor Royal <span>Hotel</span>
 </div>
 
 <ul class="nav-links" id="navLinks">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#rooms">Rooms</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="booking.html">Book Now</a></li>
 </ul>
 
 <div class="menu-btn" onclick="toggleMenu()">
@@ -44,7 +43,7 @@ Victor Royal
 </header>
 
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero">
 
 <div class="hero-content">
 
@@ -54,11 +53,11 @@ Redefined
 </h1>
 
 <p>
-Experience exceptional hospitality,
-premium accommodation and world-class service.
+Experience exceptional hospitality, premium accommodation,
+and world-class service at Victor Royal Hotel & Suites.
 </p>
 
-<a href="#booking" class="btn">
+<a href="booking.html" class="btn">
 Book Your Stay
 </a>
 
@@ -66,24 +65,25 @@ Book Your Stay
 
 </section>
 
-<!-- BOOKING -->
-<section class="booking-section" id="booking">
+<!-- QUICK BOOKING -->
+
+<section class="booking-section">
 
 <div class="booking-card">
 
-<h2>Reserve Your Room</h2>
+<h2>Quick Reservation</h2>
 
 <form class="booking-form">
 
-<input type="text" placeholder="Full Name" required>
+<input type="text" placeholder="Full Name">
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" placeholder="Email Address">
 
-<input type="date" required>
+<input type="date">
 
-<input type="date" required>
+<input type="date">
 
-<select required>
+<select>
 <option>Select Room</option>
 <option>Standard Room</option>
 <option>Deluxe Room</option>
@@ -91,7 +91,7 @@ Book Your Stay
 </select>
 
 <button type="submit">
-Check Availability
+Reserve Now
 </button>
 
 </form>
@@ -100,41 +100,31 @@ Check Availability
 
 </section>
 
-<!-- ABOUT -->
-<section class="about" id="about">
+<!-- ABOUT PREVIEW -->
 
-<h2>About Victor Royal Hotel</h2>
+<section>
 
-<p>
-Victor Royal Hotel & Suites offers guests
-an unforgettable luxury experience with elegant rooms,
-fine dining, conference facilities, swimming pool,
-24-hour service and premium hospitality.
+<h2>Welcome To Victor Royal Hotel</h2>
+
+<p style="max-width:850px;margin:auto;text-align:center;">
+Victor Royal Hotel & Suites combines elegance,
+comfort and premium hospitality to deliver
+an unforgettable guest experience.
+Whether you are visiting for business or leisure,
+our luxurious facilities ensure a memorable stay.
 </p>
 
-<div class="stats">
-
-<div class="stat">
-<h3 id="roomsCount">0</h3>
-<p>Luxury Rooms</p>
-</div>
-
-<div class="stat">
-<h3 id="staffCount">0</h3>
-<p>Professional Staff</p>
-</div>
-
-<div class="stat">
-<h3 id="guestCount">0</h3>
-<p>Happy Guests</p>
-</div>
-
+<div style="margin-top:30px;text-align:center;">
+<a href="about.html" class="btn">
+Learn More
+</a>
 </div>
 
 </section>
 
-<!-- ROOMS -->
-<section class="rooms" id="rooms">
+<!-- ROOM PREVIEW -->
+
+<section>
 
 <h2>Luxury Accommodation</h2>
 
@@ -149,11 +139,11 @@ fine dining, conference facilities, swimming pool,
 <h3>Standard Room</h3>
 
 <p>
-Perfect blend of comfort and affordability.
+Comfortable and affordable luxury.
 </p>
 
-<a href="#" class="room-btn">
-View Details
+<a href="rooms.html" class="room-btn">
+View Rooms
 </a>
 
 </div>
@@ -169,11 +159,11 @@ View Details
 <h3>Deluxe Room</h3>
 
 <p>
-Premium comfort with elegant interior design.
+Premium comfort and elegance.
 </p>
 
-<a href="#" class="room-btn">
-View Details
+<a href="rooms.html" class="room-btn">
+View Rooms
 </a>
 
 </div>
@@ -189,11 +179,11 @@ View Details
 <h3>Executive Suite</h3>
 
 <p>
-Luxury suite designed for ultimate relaxation.
+Luxury accommodation at its finest.
 </p>
 
-<a href="#" class="room-btn">
-View Details
+<a href="rooms.html" class="room-btn">
+View Rooms
 </a>
 
 </div>
@@ -205,7 +195,8 @@ View Details
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
+
+<section>
 
 <h2>Premium Services</h2>
 
@@ -245,10 +236,31 @@ View Details
 
 </section>
 
-<!-- GALLERY -->
-<section class="gallery" id="gallery">
+<!-- TESTIMONIAL -->
 
-<h2>Hotel Gallery</h2>
+<section>
+
+<h2>Guest Reviews</h2>
+
+<div class="testimonial">
+
+<p>
+"An amazing experience. The rooms were spotless,
+the service was exceptional and the facilities
+were world-class."
+</p>
+
+<h4>— Happy Guest</h4>
+
+</div>
+
+</section>
+
+<!-- GALLERY PREVIEW -->
+
+<section>
+
+<h2>Explore Our Hotel</h2>
 
 <div class="gallery-grid">
 
@@ -256,63 +268,44 @@ View Details
 <img src="images/gallery2.jpg" alt="">
 <img src="images/gallery3.jpg" alt="">
 <img src="images/gallery4.jpg" alt="">
-<img src="images/gallery5.jpg" alt="">
-<img src="images/gallery6.jpg" alt="">
 
+</div>
+
+<div style="margin-top:30px;text-align:center;">
+<a href="gallery.html" class="btn">
+View Full Gallery
+</a>
 </div>
 
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
+<!-- CALL TO ACTION -->
 
-<h2>Guest Reviews</h2>
+<section>
 
-<div class="testimonial">
+<h2>Ready For A Premium Experience?</h2>
 
-<p>
-"An amazing experience.
-The rooms were spotless,
-the service was exceptional,
-and the facilities were outstanding."
+<p style="text-align:center;max-width:800px;margin:auto;">
+Book your stay today and enjoy luxury,
+comfort and outstanding hospitality.
 </p>
 
-<h4>
-— Happy Guest
-</h4>
-
+<div style="margin-top:30px;text-align:center;">
+<a href="booking.html" class="btn">
+Reserve A Room
+</a>
 </div>
 
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+<!-- WHATSAPP -->
 
-<h2>Contact Us</h2>
-
-<p>
-<i class="fas fa-phone"></i>
-+234 800 000 0000
-</p>
-
-<p>
-<i class="fas fa-envelope"></i>
-info@victorroyalhotel.com
-</p>
-
-<p>
-<i class="fas fa-location-dot"></i>
-Delta State, Nigeria
-</p>
-
-</section>
-
-<!-- WHATSAPP BUTTON -->
 <a href="#" class="whatsapp">
 <i class="fab fa-whatsapp"></i>
 </a>
 
 <!-- FOOTER -->
+
 <footer>
 
 <p>
@@ -325,4 +318,4 @@ All Rights Reserved.
 <script src="script.js"></script>
 
 </body>
-                  </html>
+</html>
