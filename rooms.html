@@ -4,322 +4,244 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rooms & Suites | Victor Royal Hotel & Suites</title>
+<title>Rooms & Suites | Victor Royal Hotel</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
+<header class="navbar">
 
-<header>
+<div class="logo">
+Victor Royal <span>Hotel</span>
+</div>
 
-    <div class="container nav-container">
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="booking.html">Book Now</a></li>
+</ul>
 
-        <div class="logo">
-            Victor Royal Hotel & Suites
-        </div>
-
-        <nav>
-
-            <ul class="nav-links">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="restaurant.html">Restaurant</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-
-    </div>
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
 
 </header>
 
 <!-- HERO -->
+<section class="hero" style="
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('images/rooms-hero.jpg');
+background-size:cover;
+background-position:center;
+min-height:70vh;
+">
 
-<section class="hero">
+<div class="hero-content">
 
-    <div class="hero-content">
+<h1>Rooms & Suites</h1>
 
-        <h1>Luxury Rooms & Suites</h1>
+<p>
+Elegant accommodation designed for comfort and luxury.
+</p>
 
-        <p>
-            Discover elegant accommodations designed
-            for comfort, relaxation, and unforgettable stays.
-        </p>
-
-    </div>
+</div>
 
 </section>
 
-<!-- INTRO -->
+<!-- ROOM INTRO -->
+<section>
+
+<h2>Choose Your Perfect Stay</h2>
+
+<p style="max-width:900px;margin:auto;text-align:center;">
+Whether you're visiting for business, vacation or a special occasion,
+Victor Royal Hotel offers beautifully designed rooms and suites
+to meet every need.
+</p>
+
+</section>
+
+<!-- STANDARD ROOM -->
+<section>
+
+<div class="room-grid">
+
+<div class="room-card">
+
+<img src="images/room1.jpg" alt="Standard Room">
+
+<div class="room-content">
+
+<h3>Standard Room</h3>
+
+<p>
+Comfortable and affordable accommodation featuring
+air conditioning, smart TV, free WiFi and premium bedding.
+</p>
+
+<p>
+<strong>₦45,000 / Night</strong>
+</p>
+
+<ul style="margin:15px 0; line-height:2;">
+<li>✓ Queen Size Bed</li>
+<li>✓ Free WiFi</li>
+<li>✓ Smart TV</li>
+<li>✓ Air Conditioning</li>
+<li>✓ Complimentary Breakfast</li>
+</ul>
+
+<a href="booking.html" class="room-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+<!-- DELUXE ROOM -->
+
+<div class="room-card">
+
+<img src="images/room2.jpg" alt="Deluxe Room">
+
+<div class="room-content">
+
+<h3>Deluxe Room</h3>
+
+<p>
+A spacious room with elegant décor,
+larger living space and enhanced amenities.
+</p>
+
+<p>
+<strong>₦75,000 / Night</strong>
+</p>
+
+<ul style="margin:15px 0; line-height:2;">
+<li>✓ King Size Bed</li>
+<li>✓ Premium WiFi</li>
+<li>✓ Smart TV</li>
+<li>✓ Mini Bar</li>
+<li>✓ Complimentary Breakfast</li>
+</ul>
+
+<a href="booking.html" class="room-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+<!-- EXECUTIVE SUITE -->
+
+<div class="room-card">
+
+<img src="images/room3.jpg" alt="Executive Suite">
+
+<div class="room-content">
+
+<h3>Executive Suite</h3>
+
+<p>
+The ultimate luxury experience with separate lounge,
+premium furnishings and exclusive services.
+</p>
+
+<p>
+<strong>₦150,000 / Night</strong>
+</p>
+
+<ul style="margin:15px 0; line-height:2;">
+<li>✓ King Size Bed</li>
+<li>✓ Private Lounge</li>
+<li>✓ Smart TV</li>
+<li>✓ Luxury Bathroom</li>
+<li>✓ VIP Services</li>
+</ul>
+
+<a href="booking.html" class="room-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ROOM AMENITIES -->
 
 <section>
 
-    <div class="container">
+<h2>Room Amenities</h2>
 
-        <div class="section-title">
+<div class="service-grid">
 
-            <h2>Choose Your Perfect Room</h2>
+<div class="service">
+<i class="fas fa-wifi"></i>
+<h3>Free WiFi</h3>
+</div>
 
-            <p>
-                Whether you're traveling for business,
-                leisure, or a special occasion,
-                we have a room tailored to your needs.
-            </p>
+<div class="service">
+<i class="fas fa-tv"></i>
+<h3>Smart TV</h3>
+</div>
 
-        </div>
+<div class="service">
+<i class="fas fa-snowflake"></i>
+<h3>Air Conditioning</h3>
+</div>
 
-    </div>
+<div class="service">
+<i class="fas fa-mug-hot"></i>
+<h3>Breakfast</h3>
+</div>
 
-</section>
+<div class="service">
+<i class="fas fa-shower"></i>
+<h3>Luxury Bathroom</h3>
+</div>
 
-<!-- ROOMS -->
+<div class="service">
+<i class="fas fa-phone"></i>
+<h3>24/7 Room Service</h3>
+</div>
 
-<section class="rooms-preview">
-
-    <div class="container">
-
-        <div class="grid">
-
-            <!-- STANDARD ROOM -->
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
-                alt="Standard Room">
-
-                <h3>Standard Room</h3>
-
-                <p>
-                    Comfortable accommodation featuring
-                    a queen-sized bed, air conditioning,
-                    smart TV, and complimentary WiFi.
-                </p>
-
-                <span>₦35,000 / Night</span>
-
-                <div style="padding:20px;">
-                    <a href="contact.html" class="btn">
-                        Book Now
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- EXECUTIVE ROOM -->
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
-                alt="Executive Room">
-
-                <h3>Executive Room</h3>
-
-                <p>
-                    Spacious room with luxury furnishings,
-                    work desk, mini fridge, and premium amenities.
-                </p>
-
-                <span>₦55,000 / Night</span>
-
-                <div style="padding:20px;">
-                    <a href="contact.html" class="btn">
-                        Book Now
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- DELUXE ROOM -->
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=900&q=80"
-                alt="Deluxe Room">
-
-                <h3>Deluxe Room</h3>
-
-                <p>
-                    Enjoy premium comfort with elegant décor,
-                    king-sized bed, and beautiful city views.
-                </p>
-
-                <span>₦70,000 / Night</span>
-
-                <div style="padding:20px;">
-                    <a href="contact.html" class="btn">
-                        Book Now
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- ROYAL SUITE -->
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=900&q=80"
-                alt="Royal Suite">
-
-                <h3>Royal Suite</h3>
-
-                <p>
-                    Luxury suite featuring separate living space,
-                    premium furniture, and personalized service.
-                </p>
-
-                <span>₦95,000 / Night</span>
-
-                <div style="padding:20px;">
-                    <a href="contact.html" class="btn">
-                        Book Now
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- PRESIDENTIAL SUITE -->
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=900&q=80"
-                alt="Presidential Suite">
-
-                <h3>Presidential Suite</h3>
-
-                <p>
-                    The ultimate luxury experience with
-                    exclusive amenities, lounge area,
-                    and executive services.
-                </p>
-
-                <span>₦150,000 / Night</span>
-
-                <div style="padding:20px;">
-                    <a href="contact.html" class="btn">
-                        Book Now
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- FAMILY SUITE -->
-
-            <div class="card">
-
-                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80"
-                alt="Family Suite">
-
-                <h3>Family Suite</h3>
-
-                <p>
-                    Spacious accommodation ideal for families,
-                    offering comfort and convenience for everyone.
-                </p>
-
-                <span>₦110,000 / Night</span>
-
-                <div style="padding:20px;">
-                    <a href="contact.html" class="btn">
-                        Book Now
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- ROOM FEATURES -->
+<!-- SPECIAL OFFER -->
 
-<section class="facilities">
+<section style="text-align:center;">
 
-    <div class="container">
+<h2>Special Offer</h2>
 
-        <div class="section-title">
+<p style="max-width:700px;margin:auto;margin-bottom:30px;">
+Book 3 nights or more and enjoy complimentary breakfast,
+late checkout and exclusive guest benefits.
+</p>
 
-            <h2>Room Features</h2>
-
-            <p>
-                Every room is equipped with modern amenities
-                to ensure a comfortable stay.
-            </p>
-
-        </div>
-
-        <div class="grid">
-
-            <div class="facility-card">
-                <i class="fas fa-wifi"></i>
-                <h3>Free WiFi</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-tv"></i>
-                <h3>Smart TV</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-snowflake"></i>
-                <h3>Air Conditioning</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-mug-hot"></i>
-                <h3>Breakfast Included</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-shower"></i>
-                <h3>Luxury Bathroom</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-concierge-bell"></i>
-                <h3>24/7 Room Service</h3>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <h2>Reserve Your Luxury Stay</h2>
-
-        <p>
-            Book today and experience the comfort,
-            elegance, and hospitality that set us apart.
-        </p>
-
-        <a href="https://wa.me/2348000000000"
-        class="btn">
-            Book Via WhatsApp
-        </a>
-
-    </div>
+<a href="booking.html" class="btn">
+Reserve Your Room
+</a>
 
 </section>
 
@@ -327,63 +249,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <footer>
 
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div>
-
-                <h3>Victor Royal Hotel</h3>
-
-                <p>
-                    Luxury accommodation and exceptional hospitality.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Quick Links</h3>
-
-                <ul>
-                    <li>Home</li>
-                    <li>Rooms</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h3>Contact</h3>
-
-                <p>+234 800 000 0000</p>
-                <p>info@victorroyalhotel.com</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <p class="copyright">
-            © 2026 Victor Royal Hotel & Suites.
-            All Rights Reserved.
-        </p>
-
-    </div>
+<p>
+© 2026 Victor Royal Hotel & Suites.
+All Rights Reserved.
+</p>
 
 </footer>
 
-<a href="https://wa.me/2348000000000"
-class="whatsapp-float">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
-  </html>
+</html>
