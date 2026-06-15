@@ -1,112 +1,190 @@
-// =======================================
-// STARLIGHT ACADEMY V5 SCRIPT
-// =======================================
+/* =====================================
+   VICTOR ROYAL HOTEL V8 - SCRIPT
+===================================== */
 
 // MOBILE MENU
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
 
-document.addEventListener("DOMContentLoaded", function(){
-
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.querySelector(".nav-links");
-
-    if(menuBtn && navLinks){
-
-        menuBtn.addEventListener("click", function(){
-
-            navLinks.classList.toggle("active");
-
-        });
-
+    if (
+        navLinks.style.display === "flex" ||
+        navLinks.style.display === "block"
+    ) {
+        navLinks.style.display = "none";
+    } else {
+        navLinks.style.display = "flex";
     }
+}
+
+// CLOSE MENU WHEN LINK IS CLICKED
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        const navLinks = document.getElementById("navLinks");
+
+        if (window.innerWidth <= 768) {
+            navLinks.style.display = "none";
+        }
+    });
+});
+
+/* =====================================
+   ANIMATED COUNTERS
+===================================== */
+
+function animateCounter(id, target, duration = 2000) {
+
+    const element = document.getElementById(id);
+
+    if (!element) return;
+
+    let start = 0;
+    const increment = target / (duration / 16);
+
+    function updateCounter() {
+
+        start += increment;
+
+        if (start < target) {
+
+            element.textContent = Math.floor(start);
+
+            requestAnimationFrame(updateCounter);
+
+        } else {
+
+            element.textContent = target.toLocaleString();
+        }
+    }
+
+    updateCounter();
+}
+
+// START COUNTERS WHEN PAGE LOADS
+window.addEventListener("load", () => {
+
+    animateCounter("roomsCount", 120);
+
+    animateCounter("staffCount", 85);
+
+    animateCounter("guestCount", 5000);
 
 });
 
-// ANIMATED COUNTERS
+/* =====================================
+   BOOKING FORM
+===================================== */
 
-function animateCounter(id, target){
+const bookingForm = document.querySelector(".booking-form");
 
-    const counter = document.getElementById(id);
+if (bookingForm) {
 
-    if(!counter) return;
+    bookingForm.addEventListener("submit", function(e) {
 
-    let count = 0;
+        e.preventDefault();
 
-    const speed = target / 100;
+        alert(
+            "Thank you for choosing Victor Royal Hotel & Suites. Your booking request has been received."
+        );
 
-    function update(){
-
-        if(count < target){
-
-            count += speed;
-
-            counter.innerText = Math.floor(count);
-
-            requestAnimationFrame(update);
-
-        }else{
-
-            counter.innerText = target + "+";
-
-        }
-
-    }
-
-    update();
-
-}
-
-animateCounter("students-count", 1200);
-animateCounter("teachers-count", 85);
-animateCounter("graduates-count", 3500);
-animateCounter("experience-count", 15);
-
-// SCROLL REVEAL ANIMATION
-
-const revealElements = document.querySelectorAll(
-".card, .facility-card, .stat-card, .testimonial-card"
-);
-
-function revealOnScroll(){
-
-    revealElements.forEach(function(element){
-
-        const elementTop =
-        element.getBoundingClientRect().top;
-
-        const screenHeight =
-        window.innerHeight;
-
-        if(elementTop < screenHeight - 100){
-
-            element.style.opacity = "1";
-            element.style.transform = "translateY(0)";
-
-        }
+        bookingForm.reset();
 
     });
 
 }
 
-revealElements.forEach(function(element){
+/* =====================================
+   REVEAL ON SCROLL
+===================================== */
+
+const revealElements = document.querySelectorAll(
+    ".room-card, .service, .stat, .testimonial, .gallery-grid img"
+);
+
+function revealOnScroll() {
+
+    const triggerBottom = window.innerHeight * 0.85;
+
+    revealElements.forEach(element => {
+
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < triggerBottom) {
+
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+
+        }
+    });
+}
+
+// INITIAL STYLES
+revealElements.forEach(element => {
 
     element.style.opacity = "0";
-    element.style.transform = "translateY(30px)";
+
+    element.style.transform = "translateY(40px)";
+
     element.style.transition = "all 0.8s ease";
 
 });
 
 window.addEventListener("scroll", revealOnScroll);
 
-revealOnScroll();
+window.addEventListener("load", revealOnScroll);
 
-// AUTO FOOTER YEAR
+/* =====================================
+   STICKY NAVBAR SHADOW
+===================================== */
 
-const copyright =
-document.querySelector(".copyright");
+window.addEventListener("scroll", () => {
 
-if(copyright){
+    const navbar = document.querySelector(".navbar");
 
-    copyright.innerHTML =
-    `© ${new Date().getFullYear()} Starlight Academy. All Rights Reserved.`;
+    if (window.scrollY > 50) {
 
-}
+        navbar.style.boxShadow =
+            "0 10px 25px rgba(0,0,0,0.15)";
+
+    } else {
+
+        navbar.style.boxShadow = "none";
+    }
+
+});
+
+/* =====================================
+   GALLERY IMAGE HOVER EFFECT
+===================================== */
+
+const galleryImages =
+    document.querySelectorAll(".gallery-grid img");
+
+galleryImages.forEach(image => {
+
+    image.addEventListener("mouseenter", () => {
+
+        image.style.transform = "scale(1.08)";
+
+    });
+
+    image.addEventListener("mouseleave", () => {
+
+        image.style.transform = "scale(1)";
+
+    });
+
+});
+
+/* =====================================
+   WHATSAPP BUTTON
+===================================== */
+
+const whatsappBtn =
+    document.querySelector(".whatsapp");
+
+if (whatsappBtn) {
+
+    whatsappBtn.href =
+        "https://wa.me/2348000000000";
+
+                       }
