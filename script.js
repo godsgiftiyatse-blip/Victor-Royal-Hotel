@@ -1,155 +1,37 @@
-// =====================================
-// VICTOR ROYAL HOTEL V5 JAVASCRIPT
-// =====================================
+// ===================================
+// STARLIGHT ACADEMY V5 SCRIPT
+// ===================================
 
-
-// ==============================
-// PAGE FADE-IN EFFECT
-// ==============================
+// MOBILE MENU
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.body.style.opacity = "0";
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector(".nav-links");
 
-    setTimeout(() => {
+    if(menuBtn && navLinks){
 
-        document.body.style.transition =
-        "opacity 1s ease";
+        menuBtn.addEventListener("click", () => {
 
-        document.body.style.opacity = "1";
+            navLinks.classList.toggle("active");
 
-    }, 100);
-
-});
-
-
-// ==============================
-// MOBILE MENU
-// ==============================
-
-const menuBtn =
-document.querySelector(".menu-btn");
-
-const navLinks =
-document.querySelector(".nav-links");
-
-if(menuBtn){
-
-    menuBtn.addEventListener("click", () => {
-
-        if(navLinks.style.display === "flex"){
-
-            navLinks.style.display = "none";
-
-        }else{
-
-            navLinks.style.display = "flex";
-            navLinks.style.flexDirection = "column";
-            navLinks.style.position = "absolute";
-            navLinks.style.top = "80px";
-            navLinks.style.right = "20px";
-            navLinks.style.background = "#ffffff";
-            navLinks.style.padding = "20px";
-            navLinks.style.borderRadius = "12px";
-            navLinks.style.boxShadow =
-            "0 5px 20px rgba(0,0,0,.15)";
-            navLinks.style.zIndex = "999";
-
-        }
-
-    });
-
-}
-
-
-// ==============================
-// ACTIVE NAVIGATION
-// ==============================
-
-const currentPage =
-window.location.pathname.split("/").pop();
-
-document
-.querySelectorAll(".nav-links a")
-.forEach(link => {
-
-    if(link.getAttribute("href")
-    === currentPage){
-
-        link.style.color = "#c59d5f";
-        link.style.fontWeight = "700";
+        });
 
     }
 
 });
 
-
-// ==============================
-// SCROLL REVEAL ANIMATION
-// ==============================
-
-const revealElements =
-document.querySelectorAll(
-".card, .facility-card, .testimonial-card, .stat-card"
-);
-
-function revealOnScroll(){
-
-    revealElements.forEach(element => {
-
-        const elementTop =
-        element.getBoundingClientRect().top;
-
-        const windowHeight =
-        window.innerHeight;
-
-        if(elementTop < windowHeight - 100){
-
-            element.style.opacity = "1";
-            element.style.transform =
-            "translateY(0)";
-
-        }
-
-    });
-
-}
-
-revealElements.forEach(element => {
-
-    element.style.opacity = "0";
-
-    element.style.transform =
-    "translateY(40px)";
-
-    element.style.transition =
-    "all .8s ease";
-
-});
-
-window.addEventListener(
-"scroll",
-revealOnScroll
-);
-
-revealOnScroll();
-
-
-// ==============================
-// COUNTER ANIMATION
-// ==============================
+// COUNTERS
 
 function animateCounter(id, target){
 
-    const element =
-    document.getElementById(id);
+    const element = document.getElementById(id);
 
     if(!element) return;
 
     let count = 0;
 
-    const increment =
-    target / 120;
+    const increment = target / 100;
 
     function update(){
 
@@ -157,15 +39,13 @@ function animateCounter(id, target){
 
             count += increment;
 
-            element.innerText =
-            Math.floor(count);
+            element.innerText = Math.floor(count);
 
             requestAnimationFrame(update);
 
         }else{
 
-            element.innerText =
-            target + "+";
+            element.innerText = target + "+";
 
         }
 
@@ -175,180 +55,56 @@ function animateCounter(id, target){
 
 }
 
-animateCounter(
-"rooms-count",
-120
+animateCounter("students-count",1200);
+animateCounter("teachers-count",85);
+animateCounter("graduates-count",3500);
+animateCounter("experience-count",15);
+
+
+// SCROLL ANIMATIONS
+
+const cards = document.querySelectorAll(
+".card, .facility-card, .testimonial-card, .stat-card"
 );
 
-animateCounter(
-"guest-count",
-5000
-);
+function revealCards(){
 
-animateCounter(
-"staff-count",
-75
-);
+    cards.forEach(card => {
 
-animateCounter(
-"experience-count",
-10
-);
+        const top = card.getBoundingClientRect().top;
 
+        if(top < window.innerHeight - 100){
 
-// ==============================
-// BACK TO TOP BUTTON
-// ==============================
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
 
-const topButton =
-document.createElement("button");
-
-topButton.innerHTML = "↑";
-
-topButton.style.position = "fixed";
-topButton.style.bottom = "90px";
-topButton.style.right = "20px";
-topButton.style.width = "50px";
-topButton.style.height = "50px";
-topButton.style.border = "none";
-topButton.style.borderRadius = "50%";
-topButton.style.background = "#c59d5f";
-topButton.style.color = "#fff";
-topButton.style.fontSize = "22px";
-topButton.style.cursor = "pointer";
-topButton.style.display = "none";
-topButton.style.zIndex = "999";
-
-document.body.appendChild(topButton);
-
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 300){
-
-        topButton.style.display = "block";
-
-    }else{
-
-        topButton.style.display = "none";
-
-    }
-
-});
-
-topButton.addEventListener("click", () => {
-
-    window.scrollTo({
-
-        top:0,
-        behavior:"smooth"
+        }
 
     });
 
-});
+}
 
+cards.forEach(card => {
 
-// ==============================
-// BUTTON CLICK EFFECT
-// ==============================
-
-document
-.querySelectorAll(".btn")
-.forEach(button => {
-
-    button.addEventListener(
-    "click",
-    () => {
-
-        button.style.transform =
-        "scale(.95)";
-
-        setTimeout(() => {
-
-            button.style.transform =
-            "scale(1)";
-
-        },150);
-
-    });
+    card.style.opacity = "0";
+    card.style.transform = "translateY(30px)";
+    card.style.transition = "all .8s ease";
 
 });
 
+window.addEventListener("scroll", revealCards);
 
-// ==============================
-// IMAGE HOVER EFFECT
-// ==============================
-
-document
-.querySelectorAll(".card img")
-.forEach(image => {
-
-    image.addEventListener(
-    "mouseenter",
-    () => {
-
-        image.style.transform =
-        "scale(1.05)";
-
-        image.style.transition =
-        ".5s";
-
-    });
-
-    image.addEventListener(
-    "mouseleave",
-    () => {
-
-        image.style.transform =
-        "scale(1)";
-
-    });
-
-});
+revealCards();
 
 
-// ==============================
 // FOOTER YEAR
-// ==============================
 
-const yearElement =
+const copyright =
 document.querySelector(".copyright");
 
-if(yearElement){
+if(copyright){
 
-    yearElement.innerHTML =
-    `© ${new Date().getFullYear()} Victor Royal Hotel & Suites. All Rights Reserved.`;
-
-}
-
-
-// ==============================
-// HERO TEXT ANIMATION
-// ==============================
-
-const heroContent =
-document.querySelector(".hero-content");
-
-if(heroContent){
-
-    heroContent.style.opacity = "0";
-    heroContent.style.transform =
-    "translateY(30px)";
-
-    setTimeout(() => {
-
-        heroContent.style.transition =
-        "all 1s ease";
-
-        heroContent.style.opacity = "1";
-
-        heroContent.style.transform =
-        "translateY(0)";
-
-    },500);
+    copyright.innerHTML =
+    `© ${new Date().getFullYear()} Starlight Academy. All Rights Reserved.`;
 
 }
-
-
-// ==============================
-// END OF FILE
-// ==============================
