@@ -6,320 +6,184 @@
 
 <title>Contact Us | Victor Royal Hotel & Suites</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
+<header class="navbar">
 
-<header>
+<div class="logo">
+Victor Royal <span>Hotel</span>
+</div>
 
-    <div class="container nav-container">
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="booking.html">Book Now</a></li>
+</ul>
 
-        <div class="logo">
-            Victor Royal Hotel & Suites
-        </div>
-
-        <nav>
-
-            <ul class="nav-links">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="restaurant.html">Restaurant</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-
-    </div>
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
 
 </header>
 
 <!-- HERO -->
+<section class="hero" style="
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('images/contact-hero.jpg');
+background-size:cover;
+background-position:center;
+min-height:70vh;
+">
 
-<section class="hero">
+<div class="hero-content">
 
-    <div class="hero-content">
+<h1>Contact Us</h1>
 
-        <h1>Contact Victor Royal Hotel</h1>
+<p>
+We're here to help you plan the perfect stay.
+</p>
 
-        <p>
-            Book your stay, make reservations,
-            or get in touch with our hospitality team.
-        </p>
-
-    </div>
+</div>
 
 </section>
 
-<!-- CONTACT DETAILS -->
+<!-- CONTACT INFO -->
 
 <section>
 
-    <div class="container">
+<h2>Get In Touch</h2>
 
-        <div class="section-title">
+<p style="max-width:800px;margin:auto;text-align:center;">
+Have questions about our rooms, services, events or reservations?
+Reach out to our team and we'll be happy to assist you.
+</p>
 
-            <h2>Get In Touch</h2>
+<div class="service-grid" style="margin-top:50px;">
 
-            <p>
-                We are available 24/7 to assist with
-                bookings, inquiries, and guest support.
-            </p>
+<div class="service">
+<i class="fas fa-phone"></i>
+<h3>Call Us</h3>
+<p>+234 800 123 4567</p>
+</div>
 
-        </div>
+<div class="service">
+<i class="fas fa-envelope"></i>
+<h3>Email</h3>
+<p>info@victorroyalhotel.com</p>
+</div>
 
-        <div class="grid">
+<div class="service">
+<i class="fas fa-location-dot"></i>
+<h3>Address</h3>
+<p>Delta State, Nigeria</p>
+</div>
 
-            <div class="facility-card">
-
-                <i class="fas fa-location-dot"></i>
-
-                <h3>Address</h3>
-
-                <p>
-                    15 Airport Road,<br>
-                    Warri, Delta State,<br>
-                    Nigeria
-                </p>
-
-            </div>
-
-            <div class="facility-card">
-
-                <i class="fas fa-phone"></i>
-
-                <h3>Call Us</h3>
-
-                <p>
-                    +234 800 000 0000<br>
-                    +234 901 000 0000
-                </p>
-
-            </div>
-
-            <div class="facility-card">
-
-                <i class="fas fa-envelope"></i>
-
-                <h3>Email</h3>
-
-                <p>
-                    info@victorroyalhotel.com<br>
-                    bookings@victorroyalhotel.com
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 <!-- CONTACT FORM -->
 
-<section class="facilities">
+<section>
 
-    <div class="container">
+<h2>Send Us A Message</h2>
 
-        <div class="section-title">
+<div style="
+max-width:800px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+">
 
-            <h2>Send A Message</h2>
+<form class="booking-form">
 
-        </div>
+<input type="text" placeholder="Full Name" required>
 
-        <form style="
-        max-width:800px;
-        margin:auto;
-        display:grid;
-        gap:20px;">
+<input type="email" placeholder="Email Address" required>
 
-            <input
-            type="text"
-            placeholder="Full Name"
-            required
-            style="
-            padding:15px;
-            border:none;
-            border-radius:10px;">
+<input type="text" placeholder="Phone Number">
 
-            <input
-            type="email"
-            placeholder="Email Address"
-            required
-            style="
-            padding:15px;
-            border:none;
-            border-radius:10px;">
+<input type="text" placeholder="Subject">
 
-            <input
-            type="tel"
-            placeholder="Phone Number"
-            style="
-            padding:15px;
-            border:none;
-            border-radius:10px;">
+<textarea
+placeholder="Write your message..."
+required
+style="
+grid-column:1/-1;
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+min-height:180px;
+resize:vertical;
+font-family:Poppins,sans-serif;
+"></textarea>
 
-            <select
-            style="
-            padding:15px;
-            border:none;
-            border-radius:10px;">
+<button type="submit">
+Send Message
+</button>
 
-                <option>Select Inquiry Type</option>
-                <option>Room Booking</option>
-                <option>Restaurant Reservation</option>
-                <option>Conference Booking</option>
-                <option>General Inquiry</option>
+</form>
 
-            </select>
-
-            <textarea
-            rows="6"
-            placeholder="Your Message"
-            required
-            style="
-            padding:15px;
-            border:none;
-            border-radius:10px;"></textarea>
-
-            <button
-            type="submit"
-            class="btn"
-            style="border:none;cursor:pointer;">
-            Send Message
-            </button>
-
-        </form>
-
-    </div>
+</div>
 
 </section>
 
-<!-- BUSINESS HOURS -->
+<!-- MAP SECTION -->
 
 <section>
 
-    <div class="container">
+<h2>Find Us</h2>
 
-        <div class="section-title">
+<div style="
+max-width:1200px;
+margin:auto;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+">
 
-            <h2>Hotel Operations</h2>
+<iframe
+src="https://maps.google.com/maps?q=Delta%20State%20Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;"
+loading="lazy">
+</iframe>
 
-        </div>
-
-        <div class="grid">
-
-            <div class="facility-card">
-
-                <i class="fas fa-clock"></i>
-
-                <h3>Check-In</h3>
-
-                <p>2:00 PM</p>
-
-            </div>
-
-            <div class="facility-card">
-
-                <i class="fas fa-door-open"></i>
-
-                <h3>Check-Out</h3>
-
-                <p>12:00 PM</p>
-
-            </div>
-
-            <div class="facility-card">
-
-                <i class="fas fa-headset"></i>
-
-                <h3>Reception</h3>
-
-                <p>Open 24/7</p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- MAP -->
+<!-- WHATSAPP CTA -->
 
-<section class="facilities">
+<section style="text-align:center;">
 
-    <div class="container">
+<h2>Need Immediate Assistance?</h2>
 
-        <div class="section-title">
+<p style="margin-bottom:30px;">
+Chat with us directly on WhatsApp for quick reservations and inquiries.
+</p>
 
-            <h2>Find Us</h2>
-
-            <p>
-                Replace the placeholder below with
-                your Google Maps embed code.
-            </p>
-
-        </div>
-
-        <div style="
-        background:white;
-        padding:20px;
-        border-radius:20px;
-        text-align:center;
-        box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-            <div style="
-            height:400px;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:#e2e8f0;
-            border-radius:15px;">
-
-                <h3>Google Maps Embed Area</h3>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <h2>Ready For A Luxury Experience?</h2>
-
-        <p>
-            Contact us today and reserve your room
-            at Victor Royal Hotel & Suites.
-        </p>
-
-        <a href="https://wa.me/2348000000000"
-        class="btn">
-            Book Via WhatsApp
-        </a>
-
-    </div>
+<a href="https://wa.me/2348001234567" class="btn">
+<i class="fab fa-whatsapp"></i>
+ Chat on WhatsApp
+</a>
 
 </section>
 
@@ -327,65 +191,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <footer>
 
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div>
-
-                <h3>Victor Royal Hotel</h3>
-
-                <p>
-                    Luxury accommodation and premium hospitality.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li>Home</li>
-                    <li>Rooms</li>
-                    <li>Restaurant</li>
-                    <li>Gallery</li>
-
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h3>Contact</h3>
-
-                <p>+234 800 000 0000</p>
-                <p>info@victorroyalhotel.com</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <p class="copyright">
-            © 2026 Victor Royal Hotel & Suites.
-            All Rights Reserved.
-        </p>
-
-    </div>
+<p>
+© 2026 Victor Royal Hotel & Suites.
+All Rights Reserved.
+</p>
 
 </footer>
 
-<a href="https://wa.me/2348000000000"
-class="whatsapp-float">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
-  </html>
+</html>
