@@ -4,418 +4,325 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Victor Royal Hotel & Suites | Luxury Comfort Redefined</title>
+<title>Victor Royal Hotel & Suites</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
+<header class="navbar">
 
-<header>
+<div class="logo">
+Victor Royal
+<span>Hotel</span>
+</div>
 
-    <div class="container nav-container">
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-        <div class="logo">
-            Victor Royal Hotel & Suites
-        </div>
-
-        <nav>
-
-            <ul class="nav-links">
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="about.html">About</a></li>
-
-                <li><a href="rooms.html">Rooms</a></li>
-
-                <li><a href="restaurant.html">Restaurant</a></li>
-
-                <li><a href="gallery.html">Gallery</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-
-    </div>
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
 
 </header>
 
 <!-- HERO -->
+<section class="hero" id="home">
 
-<section class="hero">
+<div class="hero-content">
 
-    <div class="hero-overlay"></div>
+<h1>
+Luxury & Comfort
+Redefined
+</h1>
 
-    <div class="hero-content">
+<p>
+Experience exceptional hospitality,
+premium accommodation and world-class service.
+</p>
 
-        <h1>Luxury Comfort Redefined</h1>
+<a href="#booking" class="btn">
+Book Your Stay
+</a>
 
-        <p>
-            Experience world-class hospitality,
-            elegant accommodation, and exceptional
-            service at Victor Royal Hotel & Suites.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="rooms.html" class="btn">
-                View Rooms
-            </a>
-
-            <a href="contact.html" class="btn btn-outline">
-                Book Now
-            </a>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- WELCOME -->
+<!-- BOOKING -->
+<section class="booking-section" id="booking">
 
-<section class="welcome">
+<div class="booking-card">
 
-    <div class="container">
+<h2>Reserve Your Room</h2>
 
-        <div class="section-title">
+<form class="booking-form">
 
-            <h2>Welcome To Victor Royal</h2>
+<input type="text" placeholder="Full Name" required>
 
-            <p>
-                A premium destination designed for
-                business travelers, tourists, families,
-                and guests seeking comfort and elegance.
-            </p>
+<input type="email" placeholder="Email Address" required>
 
-        </div>
+<input type="date" required>
 
-    </div>
+<input type="date" required>
+
+<select required>
+<option>Select Room</option>
+<option>Standard Room</option>
+<option>Deluxe Room</option>
+<option>Executive Suite</option>
+</select>
+
+<button type="submit">
+Check Availability
+</button>
+
+</form>
+
+</div>
 
 </section>
 
-<!-- STATISTICS -->
+<!-- ABOUT -->
+<section class="about" id="about">
 
-<section class="stats">
+<h2>About Victor Royal Hotel</h2>
 
-    <div class="container stats-grid">
+<p>
+Victor Royal Hotel & Suites offers guests
+an unforgettable luxury experience with elegant rooms,
+fine dining, conference facilities, swimming pool,
+24-hour service and premium hospitality.
+</p>
 
-        <div class="stat-card">
+<div class="stats">
 
-            <h3 id="rooms-count">120</h3>
+<div class="stat">
+<h3 id="roomsCount">0</h3>
+<p>Luxury Rooms</p>
+</div>
 
-            <p>Luxury Rooms</p>
+<div class="stat">
+<h3 id="staffCount">0</h3>
+<p>Professional Staff</p>
+</div>
 
-        </div>
+<div class="stat">
+<h3 id="guestCount">0</h3>
+<p>Happy Guests</p>
+</div>
 
-        <div class="stat-card">
-
-            <h3 id="guest-count">5000</h3>
-
-            <p>Happy Guests</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3 id="staff-count">75</h3>
-
-            <p>Professional Staff</p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3 id="experience-count">10</h3>
-
-            <p>Years Experience</p>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 <!-- ROOMS -->
+<section class="rooms" id="rooms">
 
-<section class="rooms-preview">
+<h2>Luxury Accommodation</h2>
 
-    <div class="container">
+<div class="room-grid">
 
-        <div class="section-title">
+<div class="room-card">
 
-            <h2>Luxury Rooms & Suites</h2>
+<img src="images/room1.jpg" alt="Standard Room">
 
-            <p>
-                Designed to provide maximum comfort
-                and relaxation.
-            </p>
+<div class="room-content">
 
-        </div>
+<h3>Standard Room</h3>
 
-        <div class="grid">
+<p>
+Perfect blend of comfort and affordability.
+</p>
 
-            <div class="card">
+<a href="#" class="room-btn">
+View Details
+</a>
 
-                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80">
+</div>
 
-                <h3>Standard Room</h3>
+</div>
 
-                <p>Comfortable and affordable accommodation.</p>
+<div class="room-card">
 
-                <span>₦35,000 / Night</span>
+<img src="images/room2.jpg" alt="Deluxe Room">
 
-            </div>
+<div class="room-content">
 
-            <div class="card">
+<h3>Deluxe Room</h3>
 
-                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80">
+<p>
+Premium comfort with elegant interior design.
+</p>
 
-                <h3>Executive Room</h3>
+<a href="#" class="room-btn">
+View Details
+</a>
 
-                <p>Premium comfort for business travelers.</p>
+</div>
 
-                <span>₦55,000 / Night</span>
+</div>
 
-            </div>
+<div class="room-card">
 
-            <div class="card">
+<img src="images/room3.jpg" alt="Executive Suite">
 
-                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80">
+<div class="room-content">
 
-                <h3>Royal Suite</h3>
+<h3>Executive Suite</h3>
 
-                <p>Luxury accommodation with VIP experience.</p>
+<p>
+Luxury suite designed for ultimate relaxation.
+</p>
 
-                <span>₦95,000 / Night</span>
+<a href="#" class="room-btn">
+View Details
+</a>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
-
-</section>
-
-<!-- FACILITIES -->
-
-<section class="facilities">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Hotel Facilities</h2>
-
-        </div>
-
-        <div class="grid">
-
-            <div class="facility-card">
-                <i class="fas fa-wifi"></i>
-                <h3>Free WiFi</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-swimming-pool"></i>
-                <h3>Swimming Pool</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-dumbbell"></i>
-                <h3>Fitness Center</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-utensils"></i>
-                <h3>Restaurant</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-car"></i>
-                <h3>Parking Space</h3>
-            </div>
-
-            <div class="facility-card">
-                <i class="fas fa-users"></i>
-                <h3>Conference Hall</h3>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- RESTAURANT -->
+<!-- SERVICES -->
+<section class="services" id="services">
 
-<section class="restaurant">
+<h2>Premium Services</h2>
 
-    <div class="container">
+<div class="service-grid">
 
-        <div class="section-title">
+<div class="service">
+<i class="fas fa-wifi"></i>
+<h3>Free WiFi</h3>
+</div>
 
-            <h2>Restaurant & Lounge</h2>
+<div class="service">
+<i class="fas fa-utensils"></i>
+<h3>Restaurant</h3>
+</div>
 
-            <p>
-                Enjoy delicious local and international
-                cuisines prepared by professional chefs.
-            </p>
+<div class="service">
+<i class="fas fa-swimming-pool"></i>
+<h3>Swimming Pool</h3>
+</div>
 
-        </div>
+<div class="service">
+<i class="fas fa-car"></i>
+<h3>Free Parking</h3>
+</div>
 
-    </div>
+<div class="service">
+<i class="fas fa-bell-concierge"></i>
+<h3>Room Service</h3>
+</div>
+
+<div class="service">
+<i class="fas fa-briefcase"></i>
+<h3>Conference Hall</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+<h2>Hotel Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="images/gallery1.jpg" alt="">
+<img src="images/gallery2.jpg" alt="">
+<img src="images/gallery3.jpg" alt="">
+<img src="images/gallery4.jpg" alt="">
+<img src="images/gallery5.jpg" alt="">
+<img src="images/gallery6.jpg" alt="">
+
+</div>
 
 </section>
 
 <!-- TESTIMONIALS -->
-
 <section class="testimonials">
 
-    <div class="container">
+<h2>Guest Reviews</h2>
 
-        <div class="section-title">
+<div class="testimonial">
 
-            <h2>Guest Reviews</h2>
+<p>
+"An amazing experience.
+The rooms were spotless,
+the service was exceptional,
+and the facilities were outstanding."
+</p>
 
-        </div>
+<h4>
+— Happy Guest
+</h4>
 
-        <div class="grid">
-
-            <div class="testimonial-card">
-
-                <p>
-                    "Exceptional service and beautiful rooms.
-                    I highly recommend Victor Royal Hotel."
-                </p>
-
-                <h4>- John E.</h4>
-
-            </div>
-
-            <div class="testimonial-card">
-
-                <p>
-                    "The staff were professional and the
-                    facilities exceeded expectations."
-                </p>
-
-                <h4>- Sarah A.</h4>
-
-            </div>
-
-            <div class="testimonial-card">
-
-                <p>
-                    "One of the best hotel experiences
-                    I've had in Nigeria."
-                </p>
-
-                <h4>- Michael O.</h4>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- CTA -->
+<!-- CONTACT -->
+<section class="contact" id="contact">
 
-<section class="cta">
+<h2>Contact Us</h2>
 
-    <div class="container">
+<p>
+<i class="fas fa-phone"></i>
++234 800 000 0000
+</p>
 
-        <h2>Book Your Stay Today</h2>
+<p>
+<i class="fas fa-envelope"></i>
+info@victorroyalhotel.com
+</p>
 
-        <p>
-            Experience luxury, comfort, and exceptional hospitality.
-        </p>
-
-        <a href="https://wa.me/2348000000000" class="btn">
-            Book Via WhatsApp
-        </a>
-
-    </div>
+<p>
+<i class="fas fa-location-dot"></i>
+Delta State, Nigeria
+</p>
 
 </section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="#" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 <!-- FOOTER -->
-
 <footer>
 
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div>
-
-                <h3>Victor Royal Hotel</h3>
-
-                <p>
-                    Luxury accommodation and premium hospitality.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li>Home</li>
-                    <li>Rooms</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h3>Contact</h3>
-
-                <p>+234 800 000 0000</p>
-                <p>info@victorroyalhotel.com</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <p class="copyright">
-            © 2026 Victor Royal Hotel & Suites.
-            All Rights Reserved.
-        </p>
-
-    </div>
+<p>
+© 2026 Victor Royal Hotel & Suites.
+All Rights Reserved.
+</p>
 
 </footer>
 
-<a href="https://wa.me/2348000000000"
-class="whatsapp-float">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
-  </html>
+                  </html>
