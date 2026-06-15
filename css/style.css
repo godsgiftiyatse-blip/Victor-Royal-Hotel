@@ -1,5 +1,5 @@
 /* =====================================
-   VICTOR ROYAL HOTEL V5 CSS
+   STARLIGHT ACADEMY V5 CSS
 ===================================== */
 
 *{
@@ -35,13 +35,12 @@ body{
 
 header{
     position:fixed;
-    width:100%;
     top:0;
     left:0;
-    z-index:1000;
-    background:rgba(255,255,255,0.95);
-    backdrop-filter:blur(10px);
+    width:100%;
+    background:#ffffff;
     box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:1000;
 }
 
 .nav-container{
@@ -54,7 +53,7 @@ header{
 .logo{
     font-size:1.4rem;
     font-weight:700;
-    color:#c59d5f;
+    color:#0ea5e9;
 }
 
 .nav-links{
@@ -71,12 +70,12 @@ header{
 }
 
 .nav-links a:hover{
-    color:#c59d5f;
+    color:#0ea5e9;
 }
 
 .menu-btn{
     display:none;
-    font-size:1.5rem;
+    font-size:28px;
     cursor:pointer;
 }
 
@@ -86,26 +85,26 @@ header{
 
 .hero{
     height:100vh;
+
     background:
     linear-gradient(
     rgba(0,0,0,.55),
     rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80");
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80");
 
     background-size:cover;
     background-position:center;
 
     display:flex;
-    align-items:center;
     justify-content:center;
-    text-align:center;
+    align-items:center;
 
-    position:relative;
+    text-align:center;
+    color:white;
 }
 
 .hero-content{
-    color:white;
-    max-width:850px;
+    max-width:800px;
     padding:20px;
 }
 
@@ -125,8 +124,8 @@ header{
 
 .btn{
     display:inline-block;
-    padding:14px 32px;
-    background:#c59d5f;
+    padding:14px 30px;
+    background:#0ea5e9;
     color:white;
     text-decoration:none;
     border-radius:50px;
@@ -145,7 +144,7 @@ header{
 }
 
 /* ====================
-   SECTION
+   SECTIONS
 ==================== */
 
 section{
@@ -159,8 +158,18 @@ section{
 
 .section-title h2{
     font-size:2.5rem;
-    color:#c59d5f;
+    color:#0ea5e9;
     margin-bottom:10px;
+}
+
+/* ====================
+   GRID
+==================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 
 /* ====================
@@ -186,18 +195,30 @@ section{
 }
 
 .stat-card h3{
+    color:#0ea5e9;
     font-size:2.5rem;
-    color:#c59d5f;
 }
 
 /* ====================
-   GRID
+   PRINCIPAL CARD
 ==================== */
 
-.grid{
+.principal-card{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:300px 1fr;
     gap:30px;
+    align-items:center;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.principal-card img{
+    width:100%;
+    border-radius:20px;
+    height:320px;
+    object-fit:cover;
 }
 
 /* ====================
@@ -206,8 +227,9 @@ section{
 
 .card{
     background:white;
+    padding:30px;
+    text-align:center;
     border-radius:20px;
-    overflow:hidden;
     box-shadow:0 5px 20px rgba(0,0,0,.08);
     transition:.4s;
 }
@@ -216,25 +238,10 @@ section{
     transform:translateY(-10px);
 }
 
-.card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.card h3{
-    padding:20px 20px 10px;
-}
-
-.card p{
-    padding:0 20px;
-}
-
-.card span{
-    display:block;
-    padding:20px;
-    color:#c59d5f;
-    font-weight:700;
+.card i{
+    font-size:3rem;
+    color:#0ea5e9;
+    margin-bottom:20px;
 }
 
 /* ====================
@@ -242,7 +249,7 @@ section{
 ==================== */
 
 .facilities{
-    background:#f1f5f9;
+    background:#eef6fb;
 }
 
 .facility-card{
@@ -250,12 +257,12 @@ section{
     text-align:center;
     padding:35px;
     border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .facility-card i{
     font-size:3rem;
-    color:#c59d5f;
+    color:#0ea5e9;
     margin-bottom:15px;
 }
 
@@ -271,12 +278,12 @@ section{
 }
 
 .testimonial-card p{
-    margin-bottom:20px;
+    margin-bottom:15px;
     font-style:italic;
 }
 
 .testimonial-card h4{
-    color:#c59d5f;
+    color:#0ea5e9;
 }
 
 /* ====================
@@ -291,11 +298,11 @@ section{
 
 .cta h2{
     font-size:2.5rem;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .cta p{
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 /* ====================
@@ -315,17 +322,17 @@ footer{
     margin-bottom:30px;
 }
 
+.footer-content h3{
+    color:#0ea5e9;
+    margin-bottom:15px;
+}
+
 .footer-content ul{
     list-style:none;
 }
 
 .footer-content li{
     margin-bottom:10px;
-}
-
-footer h3{
-    color:#c59d5f;
-    margin-bottom:15px;
 }
 
 footer hr{
@@ -340,7 +347,7 @@ footer hr{
 }
 
 /* ====================
-   WHATSAPP
+   WHATSAPP BUTTON
 ==================== */
 
 .whatsapp-float{
@@ -357,8 +364,8 @@ footer hr{
     align-items:center;
     text-decoration:none;
     font-size:28px;
-    z-index:999;
     box-shadow:0 5px 15px rgba(0,0,0,.25);
+    z-index:999;
 }
 
 /* ====================
@@ -373,20 +380,38 @@ footer hr{
 
     .nav-links{
         display:none;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        right:20px;
+        width:220px;
+        background:white;
+        padding:20px;
+        border-radius:15px;
+        box-shadow:0 5px 20px rgba(0,0,0,.15);
+        gap:15px;
+    }
+
+    .nav-links.active{
+        display:flex;
     }
 
     .hero h1{
-        font-size:2.5rem;
+        font-size:2.4rem;
     }
 
     .hero p{
         font-size:1rem;
     }
 
+    .principal-card{
+        grid-template-columns:1fr;
+    }
+
     .btn-outline{
         display:block;
-        width:fit-content;
         margin:15px auto 0;
+        width:fit-content;
     }
 
     .section-title h2{
