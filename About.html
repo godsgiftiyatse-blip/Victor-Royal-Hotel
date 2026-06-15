@@ -4,405 +4,273 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Us | Starlight Academy</title>
+<title>About Us | Victor Royal Hotel & Suites</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
+<header class="navbar">
 
-<header>
+<div class="logo">
+Victor Royal
+<span>Hotel</span>
+</div>
 
-    <div class="container nav-container">
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="booking.html">Book Now</a></li>
+</ul>
 
-        <div class="logo">
-            Starlight Academy
-        </div>
-
-        <nav>
-
-            <ul class="nav-links">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-
-    </div>
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
 
 </header>
 
-<!-- HERO -->
+<!-- PAGE HERO -->
+<section class="hero" style="
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url('images/about-hero.jpg');
+background-size:cover;
+background-position:center;
+min-height:70vh;
+">
 
-<section class="hero">
+<div class="hero-content">
 
-    <div class="hero-content">
+<h1>About Victor Royal Hotel</h1>
 
-        <h1>About Starlight Academy</h1>
+<p>
+Delivering luxury, comfort and exceptional hospitality.
+</p>
 
-        <p>
-            Building future leaders through academic excellence,
-            innovation, character development, and lifelong learning.
-        </p>
-
-    </div>
+</div>
 
 </section>
 
-<!-- OUR STORY -->
-
+<!-- STORY -->
 <section>
 
-    <div class="container">
+<h2>Our Story</h2>
 
-        <div class="section-title">
+<p style="max-width:900px;margin:auto;text-align:center;">
+Victor Royal Hotel & Suites was established with a vision
+to provide world-class hospitality, premium accommodation
+and unforgettable experiences for guests.
 
-            <h2>Our Story</h2>
-
-            <p>
-                Starlight Academy was founded with a vision to provide
-                high-quality education that empowers students to become
-                confident, responsible, and successful members of society.
-            </p>
-
-        </div>
-
-        <div class="principal-card">
-
-            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80"
-            alt="School Building">
-
-            <div>
-
-                <h3>Excellence Since 2010</h3>
-
-                <p>
-                    For over a decade, Starlight Academy has maintained
-                    a reputation for academic excellence, discipline,
-                    innovation, and holistic student development.
-                </p>
-
-                <p>
-                    Our learning environment encourages curiosity,
-                    creativity, leadership, and critical thinking,
-                    helping students reach their full potential.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
+Our commitment to excellence, comfort and customer
+satisfaction has made us a preferred destination for
+business travelers, tourists and families seeking a
+luxury stay.
+</p>
 
 </section>
 
 <!-- MISSION & VISION -->
-
-<section class="facilities">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Mission & Vision</h2>
-
-        </div>
-
-        <div class="grid">
-
-            <div class="facility-card">
-
-                <i class="fas fa-bullseye"></i>
-
-                <h3>Our Mission</h3>
-
-                <p>
-                    To provide exceptional education that inspires
-                    academic excellence, character development,
-                    and responsible citizenship.
-                </p>
-
-            </div>
-
-            <div class="facility-card">
-
-                <i class="fas fa-eye"></i>
-
-                <h3>Our Vision</h3>
-
-                <p>
-                    To be a leading educational institution recognized
-                    for innovation, excellence, and producing future leaders.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CORE VALUES -->
-
 <section>
 
-    <div class="container">
+<div class="room-grid">
 
-        <div class="section-title">
+<div class="room-card">
 
-            <h2>Our Core Values</h2>
+<div class="room-content">
 
-        </div>
+<h3>Our Mission</h3>
 
-        <div class="grid">
+<p>
+To provide exceptional hospitality services that exceed
+guest expectations through comfort, innovation and
+professional excellence.
+</p>
 
-            <div class="card">
+</div>
 
-                <i class="fas fa-star"></i>
+</div>
 
-                <h3>Excellence</h3>
+<div class="room-card">
 
-                <p>
-                    We strive for the highest standards in teaching,
-                    learning, and personal development.
-                </p>
+<div class="room-content">
 
-            </div>
+<h3>Our Vision</h3>
 
-            <div class="card">
+<p>
+To become one of the most trusted and respected luxury
+hospitality brands in Nigeria and beyond.
+</p>
 
-                <i class="fas fa-handshake"></i>
+</div>
 
-                <h3>Integrity</h3>
+</div>
 
-                <p>
-                    We encourage honesty, accountability,
-                    and ethical behavior.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fas fa-lightbulb"></i>
-
-                <h3>Innovation</h3>
-
-                <p>
-                    We embrace creativity and modern learning methods.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <i class="fas fa-users"></i>
-
-                <h3>Leadership</h3>
-
-                <p>
-                    We develop confident and responsible future leaders.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- SCHOOL STATS -->
+<!-- STATS -->
+<section class="about">
 
-<section class="stats">
+<h2>Our Achievements</h2>
 
-    <div class="container stats-grid">
+<div class="stats">
 
-        <div class="stat-card">
-            <h3>1200+</h3>
-            <p>Students</p>
-        </div>
+<div class="stat">
+<h3>120+</h3>
+<p>Luxury Rooms</p>
+</div>
 
-        <div class="stat-card">
-            <h3>85+</h3>
-            <p>Teachers</p>
-        </div>
+<div class="stat">
+<h3>85+</h3>
+<p>Professional Staff</p>
+</div>
 
-        <div class="stat-card">
-            <h3>15+</h3>
-            <p>Years Experience</p>
-        </div>
+<div class="stat">
+<h3>5000+</h3>
+<p>Happy Guests</p>
+</div>
 
-        <div class="stat-card">
-            <h3>98%</h3>
-            <p>Exam Success Rate</p>
-        </div>
-
-    </div>
+</div>
 
 </section>
 
-<!-- LEADERSHIP TEAM -->
-
+<!-- WHY CHOOSE US -->
 <section>
 
-    <div class="container">
+<h2>Why Choose Us</h2>
 
-        <div class="section-title">
+<div class="service-grid">
 
-            <h2>School Leadership</h2>
+<div class="service">
+<i class="fas fa-bed"></i>
+<h3>Luxury Rooms</h3>
+</div>
 
-            <p>
-                Experienced educators dedicated to nurturing
-                academic and personal growth.
-            </p>
+<div class="service">
+<i class="fas fa-utensils"></i>
+<h3>Fine Dining</h3>
+</div>
 
-        </div>
+<div class="service">
+<i class="fas fa-swimming-pool"></i>
+<h3>Swimming Pool</h3>
+</div>
 
-        <div class="grid">
+<div class="service">
+<i class="fas fa-wifi"></i>
+<h3>Free WiFi</h3>
+</div>
 
-            <div class="card">
+<div class="service">
+<i class="fas fa-shield-heart"></i>
+<h3>24/7 Security</h3>
+</div>
 
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
-                alt="Principal"
-                style="width:100%; border-radius:15px; margin-bottom:20px;">
+<div class="service">
+<i class="fas fa-bell-concierge"></i>
+<h3>Room Service</h3>
+</div>
 
-                <h3>Mrs. Sarah Johnson</h3>
+</div>
 
-                <p>Principal</p>
+</section>
 
-            </div>
+<!-- MANAGEMENT TEAM -->
+<section>
 
-            <div class="card">
+<h2>Management Team</h2>
 
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
-                alt="Vice Principal"
-                style="width:100%; border-radius:15px; margin-bottom:20px;">
+<div class="room-grid">
 
-                <h3>Mr. Michael Adams</h3>
+<div class="room-card">
 
-                <p>Vice Principal</p>
+<img src="images/team1.jpg" alt="General Manager">
 
-            </div>
+<div class="room-content">
 
-            <div class="card">
+<h3>Michael Johnson</h3>
 
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
-                alt="Academic Director"
-                style="width:100%; border-radius:15px; margin-bottom:20px;">
+<p>
+General Manager
+</p>
 
-                <h3>Mrs. Grace Wilson</h3>
+</div>
 
-                <p>Academic Director</p>
+</div>
 
-            </div>
+<div class="room-card">
 
-        </div>
+<img src="images/team2.jpg" alt="Operations Manager">
 
-    </div>
+<div class="room-content">
+
+<h3>Sarah Williams</h3>
+
+<p>
+Operations Manager
+</p>
+
+</div>
+
+</div>
+
+<div class="room-card">
+
+<img src="images/team3.jpg" alt="Hospitality Director">
+
+<div class="room-content">
+
+<h3>David Brown</h3>
+
+<p>
+Hospitality Director
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- CTA -->
+<section style="text-align:center;">
 
-<section class="cta">
+<h2>Experience Luxury Today</h2>
 
-    <div class="container">
+<p style="margin-bottom:30px;">
+Book your stay and enjoy a premium hospitality experience.
+</p>
 
-        <h2>Join The Starlight Family</h2>
-
-        <p>
-            Discover a learning environment where every child
-            is empowered to excel and succeed.
-        </p>
-
-        <a href="admissions.html" class="btn">
-            Apply For Admission
-        </a>
-
-    </div>
+<a href="booking.html" class="btn">
+Reserve Now
+</a>
 
 </section>
 
 <!-- FOOTER -->
-
 <footer>
 
-    <div class="container">
-
-        <div class="footer-content">
-
-            <div>
-
-                <h3>Starlight Academy</h3>
-
-                <p>
-                    Excellence in education, leadership,
-                    and character development.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li>Home</li>
-                    <li>Academics</li>
-                    <li>Admissions</li>
-                    <li>Contact</li>
-
-                </ul>
-
-            </div>
-
-            <div>
-
-                <h3>Contact</h3>
-
-                <p>+234 800 000 0000</p>
-                <p>info@starlightacademy.com</p>
-
-            </div>
-
-        </div>
-
-        <hr>
-
-        <p class="copyright">
-            © 2026 Starlight Academy. All Rights Reserved.
-        </p>
-
-    </div>
+<p>
+© 2026 Victor Royal Hotel & Suites.
+All Rights Reserved.
+</p>
 
 </footer>
 
-<a href="https://wa.me/2348000000000"
-class="whatsapp-float">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
